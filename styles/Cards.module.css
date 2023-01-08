@@ -1,0 +1,47 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.headding {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+.texts {
+  width: 60%;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.bottom {
+  width: 100%;
+}
+.cardContainer {
+  padding: 60px;
+  margin: 0 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .cards {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .cardContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: azure;
+  }
+}

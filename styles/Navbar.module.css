@@ -1,0 +1,82 @@
+.container {
+  height: 100px;
+  padding: 0px 30px;
+  background-color: #d1411e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.top {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.center {
+  display: flex;
+  width: 100%;
+  flex: 3;
+}
+.bottom {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  border: 2px solid rgb(58, 42, 42);
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact {
+  font-size: 13px;
+  margin-left: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 300;
+}
+.value {
+  color: black;
+}
+.valueCircle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: -6px;
+  top: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartLogo {
+  cursor: pointer;
+}
+.logoImage {
+  object-fit: cover;
+}
+@media only screen and (max-width: 480px) {
+  .center {
+    display: none;
+  }
+}

@@ -1,0 +1,169 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 80px);
+  flex-direction: row;
+}
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.imageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+}
+.title {
+  font-size: 29px;
+  margin-top: 70px;
+}
+.price {
+  font-size: 22px;
+  font-weight: 400;
+  color: #d1411e;
+  border-bottom: 1px solid #d1411e;
+  width: fit-content;
+}
+.desc {
+  font-weight: 15;
+  margin-top: 20px;
+  font-weight: 200;
+  color: rgb(77, 69, 69);
+}
+.innerTitle {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #d1411e;
+}
+.sizes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
+  position: relative;
+}
+.size {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-right: 70px;
+  cursor: pointer;
+}
+.sizeName {
+  position: relative;
+  top: -10px;
+  right: -25px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 15px;
+}
+.size:nth-child(2) {
+  height: 60px;
+  width: 60px;
+}
+.size:nth-child(3) {
+  height: 80px;
+  width: 80px;
+}
+.ingrediands {
+  display: flex;
+}
+.ingrediand {
+  display: flex;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+.count {
+  width: 40px;
+  margin-top: 20px;
+}
+.button {
+  width: 100px;
+  margin-top: 20px;
+  border: 1px solid brown;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: teal;
+  color: white;
+  font-weight: 500;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    padding: 0;
+    margin: 0;
+  }
+  .left {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .imageContainer {
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    height: 70%;
+  }
+  .right {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .price {
+    text-align: center;
+  }
+  .sizes {
+    width: 100%;
+    padding: 0;
+  }
+  .ingrediands {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 23px;
+  }
+  .ingrediand {
+    font-size: px;
+  }
+  .count {
+    width: 50px;
+    height: 30px;
+    margin-top: 20px;
+  }
+  .button {
+    font-size: 20px;
+    width: 60%;
+    margin: 20px 0;
+  }
+}
